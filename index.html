@@ -16,6 +16,7 @@
     .center {
       text-align: center;
     }
+
     .footer {
       position: fixed;
       left: 0;
@@ -23,9 +24,6 @@
       width: 100%;
     }
   </style>
-  <script>
-    console.log("Success... Loading Body")
-  </script>
 </head>
 <!-- A grey horizontal navbar that becomes vertical on small screens-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,7 +32,7 @@
     <div class="navbar-collapse collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#times">Times</a></li>
+        <li class="nav-item"><a class="nav-link" href="#phone-numbers">Phone Numbers</a></li>
         <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -46,50 +44,47 @@
     </div>
   </div>
 </nav>
+<div class="py-5"></div>
 <!--Main body-->
-<div class="container-fluid">
+<div class="container" id="main-body">
   <div class="row">
-    <div class="col-md-2"></div>
     <!--main body content-->
-    <div class="col-md-8" id="main-body">
-      <h1 class="center">Welcome Red Wolves!</h1>
-      <h7>Although I'm still building this site, I am open to suggestions. <a class="link-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfsaKp0mL5ISVVuWQnq5icr2TFUZ48pNbeiLh-0kGKZfbkKdw/viewform?usp=sf_link" target="_blank">utilize this form to report issues, or give suggestions.</a></h7>
-      <div class="py-5"></div>
-      <h2>Before Continuing:</h2>
-      <p>If you are not on slack, please ask your roommate, or wingmen for a new invite link (invites expire). Slack is our primary form of communication within our squadron. You should be in at least two Slack workspaces: 336 TRS Airmen Info Space, and your team MTL's workspace.</p>
-      <div class="py-5"></div>
-      <div class="row">
-        <div class="col-sm-6 pb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">FAQ</h5>
-              <p class="card-text">Common questions that reappear in Slack #questions.</p>
-              <a href="#faq" class="btn btn-secondary">View</a>
-            </div>
+    <h1 class="center">Welcome Red Wolves!</h1>
+    <h7>Although I'm still building this site, I am open to suggestions. <a class="link-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfsaKp0mL5ISVVuWQnq5icr2TFUZ48pNbeiLh-0kGKZfbkKdw/viewform?usp=sf_link" target="_blank">utilize this form to report issues, or give suggestions.</a></h7>
+    <div class="py-5"></div>
+    <h2>Before Continuing:</h2>
+    <p>If you are not on slack, please ask your roommate, or wingmen for a new invite link (invites expire). Slack is our primary form of communication within our squadron. You should be in at least two Slack workspaces: 336 TRS Airmen Info Space, and your team MTL's workspace.</p>
+    <div class="py-5"></div>
+    <div class="row">
+      <div class="col-sm-6 pb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">FAQ</h5>
+            <p class="card-text">Common questions that reappear in Slack #questions.</p>
+            <a href="#faq" class="btn btn-secondary">View</a>
           </div>
         </div>
-        <div class="col-sm-6 pb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Important Times</h5>
-              <p class="card-text">AFI times, store times, appointment hours, etc.</p>
-              <a href="#times" class="btn btn-secondary">View</a>
-            </div>
+      </div>
+      <div class="col-sm-6 pb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Phone Numbers</h5>
+            <p class="card-text">AFI times, store times, appointment hours, etc.</p>
+            <a href="#phone-numbers" class="btn btn-secondary">View</a>
           </div>
         </div>
-        <div class="col-sm-6 pb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Important Information</h5>
-              <p class="card-text">Wolf Packet, hurricane preparation, guidelines, etc.</p>
-              <a href="#info" class="btn btn-secondary">View</a>
-            </div>
+      </div>
+      <div class="col-sm-6 pb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Important Information</h5>
+            <p class="card-text">Wolf Packet, hurricane preparation, guidelines, etc.</p>
+            <a href="#info" class="btn btn-secondary">View</a>
           </div>
         </div>
       </div>
     </div>
     <!--end main body content-->
-    <div class="col-md-2"></div>
     <div class="py-5"></div>
   </div>
 </div>
@@ -110,7 +105,9 @@
 <script>
   console.log("Success... Loading Final Scripts");
 </script>
+<script src="/database.js"></script>
 <script src="/system.js"></script>
+
 <!-------------------------------------------
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
