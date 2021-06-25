@@ -1,5 +1,3 @@
-var temp;
-let body = document.getElementById("main-body");
 let numbers = [
   {
     name: "Triangle Clinic",

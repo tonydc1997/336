@@ -5,7 +5,7 @@
 }
 */
 let htmlHours = "";
-let x = "10:00 - 20:00";
+x = "10:00 - 20:00";
 let hours = [
   {
     name: "Mini-mall",
@@ -29,16 +29,13 @@ hours.forEach(function (value, index, arr) {
   <tr>
     <th>Day</th>
     <th>Time</th></tr>`;
- value.hours.forEach(function(day, i){
-       x += `<tr><td>${week[i]}</td><td>${day}</td></tr>`;
- });
-
-  
-    
+  value.hours.forEach(function (day, i) {
+    x += `<tr><td>${week[i]}</td><td>${day}</td></tr>`;
+  });
 
   table += x + "</table>";
   let html = `
-<h1 class="center">Hours of Operation</h1><div class="row row-cols-1 row-cols-md-4 g-4">
+<h1 class="center">Hours of Operation</h1><div class="row row-cols-1 row-cols-lg-3 g-4">
   <div class="col">
     <div class="card">
       <div class="card-body">
