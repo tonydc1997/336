@@ -115,23 +115,9 @@ let numbers = [
     line: "228-377-9791"
   }
 ];
-let faq = [
-  {
-    q: "question",
-    a: "answer",
-    f: "text"
-  }
-];
-let info = [
-  {
-    title: "title",
-    content: `https 
-    stuff`
-  }
-];
 
 //prepare HTML for phone numbers
-let htmlNumbers = `<div class="row row-cols-1 row-cols-md-5 g-4" id="phone-grid">`
+let htmlNumbers = `<h1 class="center">Important Numbers</h1><div class="row row-cols-1 row-cols-md-4 g-4" id="phone-grid">`
   numbers.forEach(function (value, index, arr) {
     html = `
   <div class="col">
