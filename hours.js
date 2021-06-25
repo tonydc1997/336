@@ -20,8 +20,6 @@ let hours = [
   }
 ];
 //prepare HTML
-hours.forEach(function (value, index, arr) {
-  let x = "";
   let week = [
     "Monday",
     "Tuesday",
@@ -31,6 +29,8 @@ hours.forEach(function (value, index, arr) {
     "Saturday",
     "Sunday"
   ];
+hours.forEach(function (value, index, arr) {
+  x = "";
   let table = `<table class="table-light table-striped">
   <tr>
     <th>Day</th>
@@ -40,8 +40,7 @@ hours.forEach(function (value, index, arr) {
   });
 
   table += x + "</table>";
-  let html = `
-<h1 class="center">Hours of Operation</h1><div class="row row-cols-1 row-cols-lg-3 g-4">
+  y = `
   <div class="col">
     <div class="card">
       <div class="card-body">
@@ -51,7 +50,7 @@ hours.forEach(function (value, index, arr) {
       </div>
     </div>
   </div>
-  </div>
 `;
-  htmlHours += html;
+  htmlHours += y;
 });
+htmlHours = `<h1 class="center">Hours of Operation</h1><div class="row row-cols-1 row-cols-lg-3 g-4">${htmlHours}</div>`
