@@ -46,7 +46,7 @@ hours.forEach(function (value, index, arr) {
       <div class="card-body">
         <h5 class="card-title">${value.name}</h5>
         <p class="card-text">${table}</p>
-        <a href="${value.maps}" target="_blank" class="btn btn-primary">Go somewhere</a>
+        <a href="${value.maps}" target="_blank" class="btn btn-primary">Get Directions</a>
       </div>
     </div>
   </div>
