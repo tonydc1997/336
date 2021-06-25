@@ -1,5 +1,4 @@
-let records = ["phone-numbers"];
-
+let records = ["phone-numbers", "hours"];
 //let x = location.search;
 //let x = location.hash;
 let hash = location.hash.substr(1);
@@ -8,20 +7,21 @@ hashCheck(hash);
 window.addEventListener(
   "hashchange",
   function () {
-    console.log("The hash has changed!");
     hashCheck();
   },
   false
 );
 function hashCheck() {
   hash = location.hash.substr(1);
-  console.log("checking hash " + hash);
   if (hash != "") {
     if (hash.includes("&") == false) {
       console.log(records.indexOf(hash))
       if (records.indexOf(hash) !== -1) {
         if (hash == "phone-numbers") {
           body.innerHTML = htmlNumbers;
+        }
+        if(hash == "hours"){
+          body.innerHTML = htmlHours;
         }
       }
     }
