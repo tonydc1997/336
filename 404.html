@@ -1,4 +1,16 @@
 <!DOCTYPE html>
 <html>
+  <head>
   <meta http-equiv="Refresh" content="0; url='https://www.w3docs.com'" />
+    <script>
+      var url = location.host;
+      var html = `https://${url}`;
+    </script>
+  </head>
+  <body>
+    404 not found. If you are not redirected continue to this link: 
+  </body>
+  <script>
+    document.body.innerHTML += `<a href="${html}">${html}</a>`;
+  </script>
 </html>
