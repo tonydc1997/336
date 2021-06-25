@@ -6,11 +6,17 @@
 */
 let htmlHours = "";
 x = "10:00 - 20:00";
+y = "09:00 - 18:00";
 let hours = [
   {
     name: "Mini-mall",
     hours: [x, x, x, x, x, "10:00 - 18:00", "10:00 - 18:00"],
-    maps: "https://goo.gl/maps/oeZF7iJoXLvqqpFW7"
+    maps: "https://goo.gl/maps/RSCydHgbCtWKLY1E6"
+    
+  },{
+    name: "Keesler BX",
+    hours: [y, y, y, y, y, "N/A", "N/A"],
+    maps: "https://goo.gl/maps/zw8wQ12Qnv5bYzpK6"
   }
 ];
 //prepare HTML
@@ -41,7 +47,7 @@ hours.forEach(function (value, index, arr) {
       <div class="card-body">
         <h5 class="card-title">${value.name}</h5>
         <p class="card-text">${table}</p>
-        <a href="${value.maps}" target="_blank" class="btn btn-primary">Get Directions</a>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
